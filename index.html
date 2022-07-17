@@ -21,13 +21,14 @@
      <!--heading of page-->  
     <div class="heading">Dairy Business Farm Statistics</div>
     <!--div block for the form-->
-    <!--form for input-->
+
+    <!--form for daily input-->
     <div class="form">
         <form>
             <label for="sheds">Select Shade:</label><br>
             <input type="text" id="n1" value=><br/>
             <label for="milk">Input Milk in litres:</label><br>
-            <input type="number" id="n2"/><br/><br/> 
+            <input type="number" id="n2"/><br/>
         <label for="result">Daily Production is:</label><br>
         <select id="operators">
             <option value="/">/</option>
@@ -36,15 +37,37 @@
         
         <button onclick="calc();">=</button>
         <input type="text" id="result"/> </form></div>
+          <!--end daily production for form one -->
+
+        <!--form for yearly input-->
+          <div class="form1">
+            <form>
+                <label for="sheds">Select Shade:</label><br>
+                <input type="text" id="n1" value=><br/>
+                <label for="milk">Input Milk in litres:</label><br>
+                <input type="number" id="n2"/><br/>
+            <label for="result">Yearly Production is:</label><br>
+            <select id="operators">
+                <option value="/">/</option>
+                <option value="X">X</option>
+            </select>
+            
+            <button onclick="calc();">=</button>
+            <input type="text" id="result"/> </form></div>
+              <!--end daily production for form one -->
         <script>
+      
             
             function calc()
             {
                 var n1 = parseFloat(document.getElementById('n1').value);
                 var n2 = parseFloat(document.getElementById('n2').value);
+                {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
                 
                 var oper = document.getElementById('operators').value;
-                
+            
                 if(oper === '/')
                 {
                     document.getElementById('result').value = n2/1.5;
@@ -56,8 +79,20 @@
                 }
             }
             
-            
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n2/1.5;
+                }
+                
+                if(oper === '*')
+                {
+                    document.getElementById('result').value = n2*1.5;
+                }
+            }
         </script>
+    
      
     <!--icons for the social~mediaplatforms-->
     <a href="#" class="fa fa-facebook"></a>
