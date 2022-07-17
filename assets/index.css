@@ -47,7 +47,7 @@ margin: 1rem 2rem;
 .heading
 {
   position: fixed;
-  top: 10%;
+  top: 7%;
   left: 60%;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: larger;
@@ -80,8 +80,20 @@ margin: 1rem 2rem;
 .form
 {
     position: fixed;
-    top: 20%;
+    top: 15%;
     left: 60%;
+    border: #5bec08;
+    background-color: rgb(51, 48, 48);
+    color: white;
+}
+.form1
+{
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    border: #5bec08;
+    background-color: rgb(51, 48, 48);
+    color: white;
 }
 #result
 {
@@ -90,6 +102,6 @@ border: none;
 padding: 0.25rem 2rem;
 margin-right: 1rem;
 color: white;
-background-color: rgb(12, 11, 11);
+background-color: rgb(31, 34, 33);
 cursor: pointer;
 }
