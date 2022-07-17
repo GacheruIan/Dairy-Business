@@ -27,16 +27,21 @@
     <div class="form">
         <form>
             <label for="sheds">Select Shade:</label><br>
-            <input type="text" id="n1" value=><br/>
-            <label for="milk">Input Milk in litres:</label><br>
-            <input type="number" id="n2"/><br/>
+            <select name="shades" id="shades">
+                <option value="Shade~A">Shade~A</option>
+                <option value="Shade~B">Shade~B</option>
+                <option value="Shade~C">Shade~C</option>
+                <option value="Shade~D">Shade~D</option>
+              </select><br>
+        <label for="milk">Input Milk in litres:</label><br>
+        <input type="number" id="n2"/><br/>
         <label for="result">Daily Production is:</label><br>
         <select id="operators">
             <option value="/">/</option>
             <option value="X">X</option>
         </select>
         
-        <button onclick="calc();">=</button>
+        <button onclick="totalProduction();">=</button>
         <input type="text" id="result"/> </form></div>
           <!--end daily production for form one -->
 
@@ -53,13 +58,13 @@
                 <option value="X">X</option>
             </select>
             
-            <button onclick="calc();">=</button>
+            <button onclick="totalProduction();">=</button>
             <input type="text" id="result"/> </form></div>
               <!--end daily production for form one -->
         <script>
       
             
-            function calc()
+            function totalProduction()
             {
                 var n1 = parseFloat(document.getElementById('n1').value);
                 var n2 = parseFloat(document.getElementById('n2').value);
@@ -72,11 +77,13 @@
                 if(oper === '/')
                 {
                     document.getElementById('result').value = n2/1.5;
+                    alert("Your daily production in the Shed above is" + " " + n2/45 + " " + "litres")
                 }
                 
                 if(oper === 'X')
                 {
                     document.getElementById('result').value = n2*1.5;
+                    alert("Your daily production in the Shed above is" + " " + n2*45 + " " + "litres")
                 }
             }
             
@@ -85,11 +92,13 @@
                 if(oper === '/')
                 {
                     document.getElementById('result').value = n2/1.5;
+                    alert("Your daily production in the Shed above is" + " " + n2/45 + " " + "litres")
                 }
                 
                 if(oper === '*')
                 {
                     document.getElementById('result').value = n2*1.5;
+                    alert("Your daily production in the Shed above is" + " " + n2*45 + " " + "litres")
                 }
             }
         </script>
