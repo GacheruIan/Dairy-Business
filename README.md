@@ -12,7 +12,7 @@
     •  [License](#license)
     •  [Authors Info](#author-Info)
       
-   Description
+**   Description**
 The above dairy farm is used to automate the previous process done within the farm,the web application is supposed to calculate the quantity of milk produced in liters and output the total amount of milk produced in all shades. 
 
    Installation~Requirements
