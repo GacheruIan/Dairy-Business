@@ -1,9 +1,9 @@
-   Portfolio
+****   Portfolio****
 
 	By Ian Gacheru
 	
 
-   Table of Content
+ ****  Table of Content****
       
     •  [Description](#description)
     •  [Installation Requirement](#Installation)
@@ -12,17 +12,18 @@
     •  [License](#license)
     •  [Authors Info](#author-Info)
       
-**   Description**
+   **** ** Description******
+     
 The above dairy farm is used to automate the previous process done within the farm,the web application is supposed to calculate the quantity of milk produced in liters and output the total amount of milk produced in all shades. 
 
-   Installation~Requirements
+   **Installation~Requirements**
 
 * Either a computer,phone,tablet.
 
 * An access to the Internet
 
-   Installation Process
-  Technology Used:-
+   **Installation Process
+    Technology Used:-**
 
     •  HTML - which was used to build the structure of the pages.
       
@@ -30,14 +31,14 @@ The above dairy farm is used to automate the previous process done within the fa
       
     •  CSS - which was used to style the pages.
       
-   Reference
+   **Reference**
 
 * Tutorials-point
 * MDN JavaScript
 
 
 
- License
+**** License****
 
 MIT License
 
