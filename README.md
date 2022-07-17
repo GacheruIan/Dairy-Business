@@ -1,9 +1,9 @@
-a) ****   Portfolio****
+a)      Portfolio
 
 	By Ian Gacheru
 	
 
- b)****  Table of Content****
+ b)     Table of Content
       
     •  [Description](#description)
     •  [Installation Requirement](#Installation)
