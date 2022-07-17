@@ -48,22 +48,21 @@
         <!--form for yearly input-->
           <div class="form1">
             <form>
-                <label for="sheds">Select Shade:</label><br>
+                <label for="sheds">Enter buying rate:</label><br>
                 <input type="text" id="n1" value=><br/>
-                <label for="milk">Input Milk in litres:</label><br>
-                <input type="number" id="n2"/><br/>
-            <label for="result">Yearly Production is:</label><br>
+                
+            <label for="result">Amount of pay to reveive:</label><br>
             <select id="operators">
                 <option value="/">/</option>
                 <option value="X">X</option>
             </select>
             
-            <button onclick="totalProduction();">=</button>
+            <button onclick="incomeOverTime();">=</button>
             <input type="text" id="result"/> </form></div>
               <!--end daily production for form one -->
         <script>
       
-            
+            //function for daily output of milk
             function totalProduction()
             {
                 var n1 = parseFloat(document.getElementById('n1').value);
@@ -101,13 +100,55 @@
                     alert("Your daily production in the Shed above is" + " " + n2*45 + " " + "litres")
                 }
             }
+            //function for yearly output
+            function incomeOverTime()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+            
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n2/1.5;
+                    alert("Your weekly income will be" + " " + n2/45 + " " )
+                    alert("Your yearly income will be" + " " + n2/45 + " " )
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n2*1.5;
+                    alert("Your weekly income will be" + " " + n2/45 + " " )
+                    alert("Your yearly income will be" + " " + n2/45 + " " )
+                }
+            }
+            
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n2/1.5;
+                    alert("Your weekly income will be" + " " + n2/45 + " " )
+                    alert("Your yearly income will be" + " " + n2/45 + " " )
+                }
+                
+                if(oper === '*')
+                {
+                    document.getElementById('result').value = n2*1.5;
+                    alert("Your weekly income will be" + " " + n2/45 + " " )
+                    alert("Your yearly income will be" + " " + n2/45 + " " )
+                }
+            }
         </script>
-    
-    <div class="icons">
-    <!--icons for the social~mediaplatforms-->
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-whatsapp"></a>
-    </div>
+      <div class="icons">
+        <!--icons for the social~mediaplatforms-->
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
+        </div>
+  
 
 </body>
